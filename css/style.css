@@ -102,10 +102,10 @@ body {
 .board-black #row-8 > .field::before {
   position: absolute;
   margin-left: -8px;
-  color: #916050;
-  font-weight: 600;
   left: 50%;
   top: 110%;
+  color: #916050;
+  font-weight: 600;
 }
 
 .board-white #row-1 > .field:nth-child(1)::before,
