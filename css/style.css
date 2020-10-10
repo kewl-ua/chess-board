@@ -58,6 +58,18 @@ body {
   outline: 1px solid #916050;
 }
 
+.field:hover {
+  cursor: pointer;
+}
+
+.field::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: center/contain no-repeat;
+}
+
 .field-white {
   background: #FFCB9A;
 }
@@ -150,14 +162,6 @@ body {
 .board-white #row-1 > .field:nth-child(8)::before,
 .board-black #row-8 > .field:nth-child(8)::before {
   content: "H";
-}
-
-.field::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: center/contain no-repeat;
 }
 
 .pawn-black::after {
