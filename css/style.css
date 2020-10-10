@@ -1,0 +1,181 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+}
+
+.board {
+  display: inline-flex;
+  padding: 40px;
+  background: #FFCB9A;
+}
+
+.board-white {
+  flex-direction: column-reverse;
+}
+
+.board-black {
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  position: relative;
+}
+.row::before {
+  position: absolute;
+  top: 50%;
+  left: -4%;
+  line-height: 20px;
+  margin-top: -10px;
+  font-weight: 600;
+  color: #916050;
+}
+
+.field {
+  width: 80px;
+  height: 80px;
+  outline: 1px solid #916050;
+}
+
+.white {
+  background: #FFCB9A;
+}
+
+.black {
+  background: #916050;
+}
+
+/* Row decorations */
+
+#row-1::before {
+  content: "1";
+}
+
+#row-2::before {
+  content: "2";
+}
+
+#row-3::before {
+  content: "3";
+}
+
+#row-4::before {
+  content: "4";
+}
+
+#row-5::before {
+  content: "5";
+}
+
+#row-6::before {
+  content: "6";
+}
+
+#row-7::before {
+  content: "7";
+}
+
+#row-8::before {
+  content: "8";
+}
+
+/* Column decorations */
+
+.board-white #row-1 > .field {
+  position: relative;
+}
+
+.board-white #row-1 > .field::before {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  margin-left: -8px;
+  font-weight: 600;
+  color: #916050;
+}
+
+.board-white #row-1 > .field:nth-child(1)::before {
+  content: "A";
+}
+
+.board-white #row-1 > .field:nth-child(2)::before {
+  content: "B";
+}
+
+.board-white #row-1 > .field:nth-child(3)::before {
+  content: "C";
+}
+
+.board-white #row-1 > .field:nth-child(4)::before {
+  content: "D";
+}
+
+.board-white #row-1 > .field:nth-child(5)::before {
+  content: "E";
+}
+
+.board-white #row-1 > .field:nth-child(6)::before {
+  content: "F";
+}
+
+.board-white #row-1 > .field:nth-child(7)::before {
+  content: "G";
+}
+
+.board-white #row-1 > .field:nth-child(8)::before {
+  content: "H";
+}
+
+.board-black #row-8 > .field {
+  position: relative;
+}
+
+.board-black #row-8 > .field::before {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  margin-left: -8px;
+  font-weight: 600;
+  color: #916050;
+}
+
+.board-black #row-8 > .field:nth-child(1)::before {
+  content: "A";
+}
+
+.board-black #row-8 > .field:nth-child(2)::before {
+  content: "B";
+}
+
+.board-black #row-8 > .field:nth-child(3)::before {
+  content: "C";
+}
+
+.board-black #row-8 > .field:nth-child(4)::before {
+  content: "D";
+}
+
+.board-black #row-8 > .field:nth-child(5)::before {
+  content: "E";
+}
+
+.board-black #row-8 > .field:nth-child(6)::before {
+  content: "F";
+}
+
+.board-black #row-8 > .field:nth-child(7)::before {
+  content: "G";
+}
+
+.board-black #row-8 > .field:nth-child(8)::before {
+  content: "H";
+}
