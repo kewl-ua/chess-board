@@ -94,88 +94,56 @@ body {
   position: relative;
 }
 
-.board-white #row-1 > .field::before {
-  position: absolute;
-  left: 50%;
-  top: 110%;
-  margin-left: -8px;
-  font-weight: 600;
-  color: #916050;
-}
-
-.board-white #row-1 > .field:nth-child(1)::before {
-  content: "A";
-}
-
-.board-white #row-1 > .field:nth-child(2)::before {
-  content: "B";
-}
-
-.board-white #row-1 > .field:nth-child(3)::before {
-  content: "C";
-}
-
-.board-white #row-1 > .field:nth-child(4)::before {
-  content: "D";
-}
-
-.board-white #row-1 > .field:nth-child(5)::before {
-  content: "E";
-}
-
-.board-white #row-1 > .field:nth-child(6)::before {
-  content: "F";
-}
-
-.board-white #row-1 > .field:nth-child(7)::before {
-  content: "G";
-}
-
-.board-white #row-1 > .field:nth-child(8)::before {
-  content: "H";
-}
-
 .board-black #row-8 > .field {
   position: relative;
 }
 
+.board-white #row-1 > .field::before,
 .board-black #row-8 > .field::before {
   position: absolute;
+  margin-left: -8px;
+  color: #916050;
+  font-weight: 600;
   left: 50%;
   top: 110%;
-  margin-left: -8px;
-  font-weight: 600;
-  color: #916050;
 }
 
+.board-white #row-1 > .field:nth-child(1)::before,
 .board-black #row-8 > .field:nth-child(1)::before {
   content: "A";
 }
 
+.board-white #row-1 > .field:nth-child(2)::before,
 .board-black #row-8 > .field:nth-child(2)::before {
   content: "B";
 }
 
+.board-white #row-1 > .field:nth-child(3)::before,
 .board-black #row-8 > .field:nth-child(3)::before {
   content: "C";
 }
 
+.board-white #row-1 > .field:nth-child(4)::before,
 .board-black #row-8 > .field:nth-child(4)::before {
   content: "D";
 }
 
+.board-white #row-1 > .field:nth-child(5)::before,
 .board-black #row-8 > .field:nth-child(5)::before {
   content: "E";
 }
 
+.board-white #row-1 > .field:nth-child(6)::before,
 .board-black #row-8 > .field:nth-child(6)::before {
   content: "F";
 }
 
+.board-white #row-1 > .field:nth-child(7)::before,
 .board-black #row-8 > .field:nth-child(7)::before {
   content: "G";
 }
 
+.board-white #row-1 > .field:nth-child(8)::before,
 .board-black #row-8 > .field:nth-child(8)::before {
   content: "H";
 }
