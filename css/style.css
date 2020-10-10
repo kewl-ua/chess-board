@@ -58,10 +58,6 @@ body {
   outline: 1px solid #916050;
 }
 
-.field:hover {
-  cursor: pointer;
-}
-
 .field::after {
   content: "";
   position: absolute;
@@ -164,50 +160,54 @@ body {
   content: "H";
 }
 
-.pawn-black::after {
+.figure-pawn-b::after {
   background-image: url(../img/pawn-b.svg);
 }
 
-.bishop-black::after {
+.figure-bishop-b::after {
   background-image: url(../img/bishop-b.svg);
 }
 
-.knight-black::after {
+.figure-knight-b::after {
   background-image: url(../img/knight-b.svg);
 }
 
-.rook-black::after {
+.figure-rook-b::after {
   background-image: url(../img/rook-b.svg)
 }
 
-.queen-black::after {
+.figure-queen-b::after {
   background-image: url(../img/queen-b.svg);
 }
 
-.king-black::after {
+.figure-king-b::after {
   background-image: url(../img/king-b.svg);
 }
 
-.pawn-white::after {
+.figure-pawn-w::after {
   background-image: url(../img/pawn-w.svg);
 }
 
-.bishop-white::after {
+.figure-bishop-w::after {
   background-image: url(../img/bishop-w.svg);
 }
 
-.knight-white::after {
+.figure-knight-w::after {
   background-image: url(../img/knight-w.svg);
 }
 
-.rook-white::after {
+.figure-rook-w::after {
   background-image: url(../img/rook-w.svg)
 }
 
-.queen-white::after {
+.figure-queen-w::after {
   background-image: url(../img/queen-w.svg);
 }
 
-.king-white::after {
+.figure-king-w::after {
   background-image: url(../img/king-w.svg);
+}
+
+[class*=figure-]:hover {
+  cursor: pointer;
 }
