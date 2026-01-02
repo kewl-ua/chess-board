@@ -211,3 +211,18 @@ body {
 [class*=figure-]:hover {
   cursor: pointer;
 }
+
+/* Drag and drop styles */
+.field.dragging {
+  opacity: 0.4;
+}
+
+.field.drop-target {
+  background-color: rgba(76, 175, 80, 0.3) !important;
+  box-shadow: inset 0 0 10px rgba(76, 175, 80, 0.8);
+}
+
+[draggable=true] {
+  cursor: move;
+  user-select: none;
+}
